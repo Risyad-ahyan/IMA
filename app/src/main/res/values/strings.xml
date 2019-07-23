@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IMA</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="nextbtn">Next</string>
+    <string name="prevbtn">Prev</string>
+    <string name="step1">Step1</string>
+    <string name="loginHere">LOGIN HERE</string>
+    <string name="addDataMachine">Add Machine Data</string>
+    <string name="nameApp">IMAGE MACHINE</string>
+    <string name="formAddMachineData">Form Add Machine Data</string>
+    <string name="DetailAddMachineData">Detail Machine Data</string>
+    <string name="MachineName">Machine Name</string>
+    <string name="MachineType">Machine Type</string>
+    <string name="MachineQRcode">Machine QR code</string>
+    <string name="LastMaintenanceDate">Last Maintenance</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_machine_data_">MachineData_Activity</string>
+</resources>
