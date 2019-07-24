@@ -52,7 +52,7 @@
             android:orientation="vertical"
             android:textColor="@color/coklatPekat"
             android:gravity="center"
-            android:layout_margin="@dimen/activity_horizontal_margin"
+
             android:padding="@dimen/activity_horizontal_margin">
 
             <ScrollView
@@ -99,7 +99,7 @@
                             android:layout_weight=".5"
                             android:background="@color/silver"
                             android:inputType="text"
-                            android:textSize="11sp" >
+                            android:textSize="11dp" >
                             <requestFocus />
                         </EditText>
                     </TableRow>

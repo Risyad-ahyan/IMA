@@ -142,4 +142,10 @@ public class MainDatabase {
         return hasil;
     }
 
+    //--- delete
+
+    public void deleteMachineImg(int id,String path) {
+        database.delete("MACHINE_IMAGE", "Machine_ID = "+id+" and Uri_Image = '"+path+"'", null);
+    }
+
 }

@@ -24,7 +24,8 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
 
 
                 <include layout="@layout/content_machine_data_" />

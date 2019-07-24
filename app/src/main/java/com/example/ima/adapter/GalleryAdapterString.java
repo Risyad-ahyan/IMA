@@ -1,6 +1,7 @@
 package com.example.ima.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -11,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.example.ima.ima.R;
+import com.example.ima.ima.ShowImageActivity;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -26,12 +28,14 @@ public class GalleryAdapterString extends BaseAdapter {
     private LayoutInflater inflater;
     private ImageView ivGallery;
     ArrayList<String> mArrayUri;
+    private int id ;
 
 
-    public GalleryAdapterString(Context ctx, ArrayList<String> mArrayUri) {
+    public GalleryAdapterString(Context ctx, ArrayList<String> mArrayUri,int id) {
 
         this.ctx = ctx;
         this.mArrayUri = mArrayUri;
+        this.id=id;
     }
 
 
@@ -52,7 +56,7 @@ public class GalleryAdapterString extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         pos = position;
         inflater = (LayoutInflater) ctx
@@ -61,6 +65,19 @@ public class GalleryAdapterString extends BaseAdapter {
         View itemView = inflater.inflate(R.layout.img_item, parent, false);
 
         ivGallery = (ImageView) itemView.findViewById(R.id.ivGallery);
+
+        ivGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ctx, ShowImageActivity.class);
+                i.putExtra("path", mArrayUri.get(position));
+                i.putExtra("id",id);
+                i.putExtra("header", "Show Image");
+                ctx.startActivity(i);
+
+            }
+        });
+
         File f = new File(mArrayUri.get(position));
 
         Bitmap b = BitmapFactory.decodeFile(f.getAbsolutePath());
