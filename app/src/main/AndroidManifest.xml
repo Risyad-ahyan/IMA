@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ima.ima">
+    package="com.example.ima.activity">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.ima.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,16 +21,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Dashboard_Activity"
+            android:name="com.example.ima.activity.Dashboard_Activity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ScannerViewActivity" />
+        <activity android:name="com.example.ima.activity.ScannerViewActivity" />
         <activity
-            android:name=".MachineData_Activity"
+            android:name="com.example.ima.activity.MachineData_Activity"
             android:label="@string/title_activity_machine_data_"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".AddMachineData_Activity" />
-        <activity android:name=".DetailMachineData_Activity"></activity>
-        <activity android:name=".ShowImageActivity"></activity>
+        <activity android:name="com.example.ima.activity.AddMachineData_Activity" />
+        <activity android:name="com.example.ima.activity.DetailMachineData_Activity"></activity>
+        <activity android:name="com.example.ima.activity.ShowImageActivity"></activity>
     </application>
 
 </manifest>

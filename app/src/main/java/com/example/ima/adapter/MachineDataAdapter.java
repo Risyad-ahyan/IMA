@@ -12,11 +12,9 @@ import android.widget.TextView;
 
 import com.example.ima.Model.MachineData;
 import com.example.ima.database.QueryDatabase;
-import com.example.ima.ima.R;
+import com.example.ima.activity.R;
 
-import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Locale;
 
 
 public class MachineDataAdapter extends BaseAdapter implements Filterable {

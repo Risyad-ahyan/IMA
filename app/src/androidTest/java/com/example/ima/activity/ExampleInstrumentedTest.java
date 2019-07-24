@@ -1,4 +1,4 @@
-package com.example.ima.ima;
+package com.example.ima.activity;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

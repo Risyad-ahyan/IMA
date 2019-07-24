@@ -1,4 +1,4 @@
-package com.example.ima.ima;
+package com.example.ima.activity;
 
 import org.junit.Test;
 

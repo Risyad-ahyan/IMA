@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import com.example.ima.ima.R;
+import com.example.ima.activity.R;
 
 import java.util.ArrayList;
 
