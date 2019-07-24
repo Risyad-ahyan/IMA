@@ -1,6 +1,8 @@
 package com.example.ima.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,22 +12,23 @@ import android.widget.ImageView;
 
 import com.example.ima.ima.R;
 
+import java.io.File;
 import java.util.ArrayList;
 
 /**
  * Created by Ahyan on 7/23/2019.
  */
 
-public class GalleryAdapter extends BaseAdapter {
+public class GalleryAdapterString extends BaseAdapter {
 
     private Context ctx;
     private int pos;
     private LayoutInflater inflater;
     private ImageView ivGallery;
-    ArrayList<Uri> mArrayUri;
+    ArrayList<String> mArrayUri;
 
 
-    public GalleryAdapter(Context ctx, ArrayList<Uri> mArrayUri) {
+    public GalleryAdapterString(Context ctx, ArrayList<String> mArrayUri) {
 
         this.ctx = ctx;
         this.mArrayUri = mArrayUri;
@@ -58,8 +61,10 @@ public class GalleryAdapter extends BaseAdapter {
         View itemView = inflater.inflate(R.layout.img_item, parent, false);
 
         ivGallery = (ImageView) itemView.findViewById(R.id.ivGallery);
+        File f = new File(mArrayUri.get(position));
 
-        ivGallery.setImageURI(mArrayUri.get(position));
+        Bitmap b = BitmapFactory.decodeFile(f.getAbsolutePath());
+        ivGallery.setImageBitmap(b);
 
         return itemView;
     }

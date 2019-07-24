@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
     public static final String DB_Name="IMA.db";
-    public static final int db_ver=4;
+    public static final int db_ver=5;
 
 
     private static final String DB_CREATE1 =
